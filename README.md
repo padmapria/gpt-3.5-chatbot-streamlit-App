@@ -1,4 +1,4 @@
-# Chat-w-CSV-Streamlit-App
+# gpt-3.5-chatbot-streamlit-App
 An LLM-powered Streamlit app to chat with GPT.
 
 ## How to Run the App
@@ -21,8 +21,8 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 
 3. Ensure Streamlit is installed on your system and run the app using the below commands from command prompt:
 
-git clone https://github.com/padmapria/gpt-3.5-streamlit-chatbot.git    
-cd gpt-3.5-streamlit-chatbot  	  
+git clone https://github.com/padmapria/gpt-3.5-chatbot-streamlit-App.git    
+cd gpt-3.5-chatbot-streamlit-App  	  
 pip install -r requirements.txt    
 streamlit run app.py    
       
