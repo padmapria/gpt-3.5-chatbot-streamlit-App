@@ -16,23 +16,24 @@ st.set_page_config(
     layout="centered"
 )
 
-# initialize chat session in streamlit
-st.session_state.chat_history = []
+# initialize chat session in streamlit, if not exists
+if "chat_history" not in st.session_state:
+    st.session_state.chat_history = []
 
 # streamlit page title
 st.title("🗣️ OpenAI GPT - ChatBot")
 
-# display chat history
+# display chat history ui
 for message in st.session_state.chat_history:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
 
-# input field for user's message
+# input field for user's chat message
 user_prompt = st.chat_input("Ask GPT...")
 
 if user_prompt:
-    # add user's message to chat_history and display it
+    # add user's chat message to chat_history and display it
     st.chat_message("user").markdown(user_prompt)
     st.session_state.chat_history.append({"role": "user", "content": user_prompt})
 
