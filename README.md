@@ -1,5 +1,5 @@
 # gpt-3.5-chatbot-streamlit-App
-An LLM-powered Streamlit app to chat with GPT.
+An LLM-powered Streamlit app to chat with OpenAI GPT.
 
 ## How to Run the App
 **Note:** OpenAI immediately revokes the API key once it detects that the key has been exposed publicly. Therefore, do not expose your API key.
