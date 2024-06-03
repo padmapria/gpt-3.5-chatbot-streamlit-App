@@ -25,7 +25,8 @@ git clone https://github.com/padmapria/gpt-3.5-streamlit-chatbot.git
 cd gpt-3.5-streamlit-chatbot  	  
 pip install -r requirements.txt    
 streamlit run app.py    
-Check the deployed application from the brower..       
+      
+Check the deployed application from the brower..        
 http://localhost:8501     
 
 ![Example Image](sample_chatbot.jpg)
